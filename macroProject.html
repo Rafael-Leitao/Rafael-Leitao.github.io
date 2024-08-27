@@ -43,28 +43,21 @@
     </section>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/spending2.png" alt="Rafael Leitao profile picture" class="profile-pic" />
+            <img src="./assets/dataviz.png" alt="Rafael Leitao profile picture" class="section__pic-container" />
         </div>
         
         <div class="section__text">
             <p class="section__text__p1">
             <p>
-                As a bilingual (Portuguese–English) Computer Science graduate from San Francisco State University, I
-                bring a robust
-                foundation in database management and software development to my role as a Software Engineer Intern at
-                Neuroleap in
-                San
-                Francisco. My technical proficiency spans SQL, Python, Golang, and data analytics tools like Tableau,
-                underpinned by
-                a
-                strong grasp of data structures and algorithms.
+                The "Macro Spending Analyzer" is a comprehensive financial management application aimed at providing users with a
+                detailed understanding of their spending patterns and financial status. By categorizing expenses and income, users can
+                visualize their financial activity through various interactive charts and graphs, making it easier to assess and
+                optimize their financial decisions. 
             </p>
             <p>
-                I am excited to use my analytical skills and technical knowledge in a challenging role at an innovative
-                technology
-                company. I’m looking for opportunities that challenge me to solve tough problems and develop new
-                software solutions,
-                helping me grow and make a real impact in the tech industry.
+                In addition to transaction management, the application features a unique analytical component that aggregates spending
+                by categories such as food, utilities, and entertainment, offering users a granular view of where their money goes. This
+                functionality is especially useful for budget planning and tracking financial goals.
             </p>
             </p>
         </div>
@@ -74,29 +67,25 @@
         <div class="section__text">
             <p class="section__text__p1">
             <p>
-                As a bilingual (Portuguese–English) Computer Science graduate from San Francisco State University, I
-                bring a
-                robust
-                foundation in database management and software development to my role as a Software Engineer Intern at
-                Neuroleap in
-                San
-                Francisco. My technical proficiency spans SQL, Python, Golang, and data analytics tools like Tableau,
-                underpinned by
-                a
-                strong grasp of data structures and algorithms.
+                Technically, the "Macro Spending Analyzer" is developed using SwiftUI for its front-end, providing a responsive and
+                aesthetically pleasing user interface that enhances user experience on iOS devices. The backend is powered by SQLite, a
+                choice that ensures lightweight, yet powerful data management capabilities suitable for handling complex queries and
+                large datasets effectively. The application leverages SQLite's robust features to perform data operations like CRUD
+                (Create, Read, Update, Delete) on financial records stored locally on the user’s device.
             </p>
             <p>
-                I am excited to use my analytical skills and technical knowledge in a challenging role at an innovative
-                technology
-                company. I’m looking for opportunities that challenge me to solve tough problems and develop new
-                software
-                solutions,
-                helping me grow and make a real impact in the tech industry.
+            On the backend, financial data is structured across several tables such as purchases, expenses, incomes, and balances,
+            allowing for efficient data retrieval and manipulation. The application includes functionalities to automatically update
+            monthly incomes and expenses, reflecting these in user-visible charts and summaries dynamically. Using advanced SQL
+            queries, the app calculates totals and categorizes spending, which are then rendered in real-time through SwiftUI’s
+            powerful visualization capabilities such as pie charts, bar graphs, and line markers, providing users with immediate
+            feedback on their financial health.
+
             </p>
             </p>
         </div>
         <div class="section__pic-container">
-            <img src="./assets/spending2.png" alt="macroProject picture" class="profile-pic" />
+            <img src="./assets/spending3.png" alt="macroProject picture" class="section__pic-container" />
         </div>
     </section>
 
@@ -121,7 +110,11 @@
             </div>
             <div class="contact-info-container">
                 <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-                <p><a href="https://www.linkedin.com/in/rafaeleitao/">LinkedIn</a></p>
+                <p><a onclick="window.open('https://www.linkedin.com/in/rafaeleitao/', '_blank')">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/pdf.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a onclick="window.open('./assets/RafaelLeitaoResume.pdf')">Resume</a></p>
             </div>
         </div>
     </section>
