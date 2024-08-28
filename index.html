@@ -1,413 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rafael Leitao's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      
-      <div class="logo">Welcome to my page</div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rafael Leitao's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+
+    <div class="logo">Welcome to my page</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Rafael Leitao</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="RafaeL Leitao profile picture" class="profile-pic" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Rafael Leitao</h1>
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="aba9867f-5720-48e5-acbc-364c0673dab8"
+        data-share-badge-host="https://www.credly.com"></div>
+      <!-- <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script> -->
+      <p class="section__text__p2">Software Engineer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/RafaelLeitaoResume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="window.open('https://www.linkedin.com/in/rafaeleitao/', '_blank')" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="window.open('https://github.com/Rafael-Leitao', '_blank')" />
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/rafaelTahoe.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>1+ year <br />Backend Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Sc. Bachelors Degree<br />San Francisco State University</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            As a bilingual (Portuguese–English) Computer Science graduate from San Francisco State University, I bring a
+            robust
+            foundation in database management and software development to my role as a Software Engineer Intern at
+            Neuroleap in San
+            Francisco. My technical proficiency spans SQL, Python, Golang, and data analytics tools like Tableau,
+            underpinned by a
+            strong grasp of data structures and algorithms.
+          </p>
+          <p>
+            At Neuroleap, I've developed and tested RESTful APIs to enhance data accessibility, optimized SQL queries
+            for
+            large-scale database systems, and collaborated on advanced database synchronization strategies using AWS.
+            These
+            contributions have notably improved system efficiencies and user satisfaction.
+          </p>
+          <p>
+            Previously, as a Database Administrator at Plennus IT Services in Brazil, I played a key role in migrating
+            critical data
+            tables from MySQL to Oracle, boosting system scalability and performance. This experience honed my skills in
+            managing
+            complex database infrastructures and ensuring compliance with security standards.
+          </p>
+          <p>
+            I am excited to use my analytical skills and technical knowledge in a challenging role at an innovative
+            technology
+            company. I’m looking for opportunities that challenge me to solve tough problems and develop new software
+            solutions,
+            helping me grow and make a real impact in the tech industry.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Database & Cloud Technologies</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/postgres-32.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PostgreSQL</h3>
+                <p></p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/mysql-32.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MySQL</h3>
+                <p></p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/oracle-32.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>OracleDB</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/aws-32.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>AWS</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/c++-32.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C++</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/go-32.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Golang</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/python-32.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/django-32.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Django</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/html5.32.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/css-32.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/js.32.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Certifications & Others</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/aws-32.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>AWS Practitioner</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/git-32.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/google-32.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Google Data Analytics</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/tableau-32.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Tableau</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/calAlert.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">California Evacuation Alert</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/CSC-648-SFSU/csc648-02-fa23-team06', '_blank')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='calEvacProject.html'">
+              Know More
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/dataviz.png" alt="Project 2" class="section__pic-container" />
+          </div>
+          <h2 class="experience-sub-title project-title">Macro Spending Analyzer</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Rafael-Leitao/macroSpendingAnalyzer', '_blank')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='macroProject.html'">
+              Know More
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/dashboard.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Financial Dashboard</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Rafael-Leitao/Financial-Dashboard', '_blank')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='financialProject.html'">
+              Know More
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/autoCar.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Autonomous Vehicle</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/CSC615-2024-Spring/csc615-term-project-anthonySilva23', '_blank')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='carProject.html'">
+              Know More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:examplemail@gmail.com">rafael.s.leitao@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a onclick="window.open('https://www.linkedin.com/in/rafaeleitao/', '_blank')">LinkedIn</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/pdf.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a onclick="window.open('./assets/RafaelLeitaoResume.pdf')">Resume</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
-          <li><a href="#about">About me</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Rafael Leitao</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="RafaeL Leitao profile picture" class="profile-pic"/>
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Rafael Leitao</h1>
-            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="aba9867f-5720-48e5-acbc-364c0673dab8"
-              data-share-badge-host="https://www.credly.com"></div>
-            <!-- <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script> -->
-        <p class="section__text__p2">Software Engineer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/RafaelLeitaoResume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="window.open('https://www.linkedin.com/in/rafaeleitao/', '_blank')"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="window.open('https://github.com/Rafael-Leitao', '_blank')"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/rafaelTahoe.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1+ year <br />Backend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />San Francisco State University</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              As a bilingual (Portuguese–English) Computer Science graduate from San Francisco State University, I bring a robust
-              foundation in database management and software development to my role as a Software Engineer Intern at Neuroleap in San
-              Francisco. My technical proficiency spans SQL, Python, Golang, and data analytics tools like Tableau, underpinned by a
-              strong grasp of data structures and algorithms.
-            </p>
-            <p>
-              I am excited to use my analytical skills and technical knowledge in a challenging role at an innovative technology
-              company. I’m looking for opportunities that challenge me to solve tough problems and develop new software solutions,
-              helping me grow and make a real impact in the tech industry.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Database & Cloud Technologies</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/postgres-32.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p></p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/mysql-32.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>MySQL</h3>
-                  <p></p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/oracle-32.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>OracleDB</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/aws-32.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>AWS</h3>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/c++-32.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>C++</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/go-32.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Golang</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/python-32.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Python</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/django-32.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Django</h3>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/html5.32.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/css-32.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/js.32.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                </div>
-              </article>
-            </div>
-          </div>
-          
-          <div class="details-container">
-            <h2 class="experience-sub-title">Certifications & Others</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/aws-32.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>AWS Practitioner</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/git-32.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Git</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/google-32.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Google Data Analytics</h3>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/tableau-32.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Tableau</h3>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/calAlert.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">California Evacuation Alert</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/CSC-648-SFSU/csc648-02-fa23-team06', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='calEvacProject.html'"
-              >
-                Know More
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/dataviz.png"
-                alt="Project 2"
-                class="section__pic-container"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Macro Spending Analyzer</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/Rafael-Leitao/macroSpendingAnalyzer', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='macroProject.html'"
-              >
-                Know More
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/dashboard.png" alt="Project 2" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Financial Dashboard</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/Rafael-Leitao/Financial-Dashboard', '_blank')">
-                Github
-              </button>
-              <button class="btn btn-color-2 project-btn"
-                onclick="location.href='financialProject.html'">
-                Know More
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/autoCar.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Autonomous Vehicle</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/CSC615-2024-Spring/csc615-term-project-anthonySilva23', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='carProject.html'">
-                Know More
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">rafael.s.leitao@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a onclick="window.open('https://www.linkedin.com/in/rafaeleitao/', '_blank')">LinkedIn</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img src="./assets/pdf.png" alt="LinkedIn icon" class="icon contact-icon" />
-          <p><a onclick="window.open('./assets/RafaelLeitaoResume.pdf')">Resume</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Rafael Leitao. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    <p>Copyright &#169; 2024 Rafael Leitao. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
