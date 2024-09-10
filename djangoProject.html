@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Django REST API for User Profiles and Feed</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+
+        <div class="logo">Django REST API for User Profiles and Feed</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About me</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Django REST API for User Profiles and Feed</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    
+    </section>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/django.admin.jpg" alt="calAlert2 picture" class="profile-pic" />
+        </div>
+        
+        <div class="section__text">
+            <p class="section__text__p1">
+
+                <p style="text-align: justify; margin-bottom: 20px;">
+                    The <b>Django REST API for User Profiles and Feed Management</b> is a backend system designed to handle user
+                    authentication, profile management, and activity feed operations. Built with <b>Django</b> and <b>Django REST Framework (DRF)</b>,
+                    this project provides a scalable and secure foundation for any application requiring user accounts and activity feeds.
+                </p>
+                <p style="text-align: justify; margin-bottom: 20px;">
+                    <b>Comprehensive User Authentication:</b> The system features a secure user authentication mechanism, allowing users to
+                    <b>register, log in, and manage</b> their profiles. The API is designed to ensure that user data is handled safely and
+                    efficiently, adhering to best practices in security.
+                </p>
+                <p style="text-align: justify; margin-bottom: 20px;">           
+                    <b>User Profiles and Permissions:</b> This API allows for the <b>creation, retrieval, updating, and deletion (CRUD)</b> of
+                    user profiles. It includes custom permission classes that restrict users from modifying other users' profiles, ensuring data
+                    integrity and privacy.
+                </p>
+            </p>
+        </div>
+    </section>
+
+    <section id="profile">
+        <div class="section__text">
+            <p class="section__text__p1">
+                
+            <p style="text-align: justify; margin-bottom: 20px;">
+                <b>Activity Feed Management:</b> Users can post status updates to their profile feed, which can be <b>viewed, updated,
+                and deleted</b>. The API handles these operations with attention to maintaining the integrity of user data and ensuring
+                that updates are securely attributed to the correct user.
+            </p>
+            <p style="text-align: justify; margin-bottom: 20px;">
+                <b>Token-Based Authentication:</b> The project employs token-based authentication using <b>Django REST Framework's
+                    built-in capabilities</b>. This ensures that only authenticated users can access and modify their profiles and feed items.
+            </p>
+            <p style="text-align: justify; margin-bottom: 20px;">
+                <b>Scalable and Modular Architecture:</b> The project is structured to allow for easy scalability and integration
+                with other services. The codebase is clean and modular, making it straightforward to extend the system with additional features or
+                integrate it into larger applications.
+            </p>
+            </p>
+        </div>
+        <div class="section__pic-container">
+            <img src="./assets/django.profile.jpg" alt="Rafael Leitao profile picture" class="profile-pic" />
+        </div>
+    </section>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/django.feed.jpg" alt="calAlert2 picture" class="profile-pic" />
+        </div>
+    
+        <div class="section__text">
+            <p class="section__text__p1" style="text-align: justify; margin-bottom: 20px;">
+            <p><b>Technology Stack:</b></p>
+            <p >
+                <b>Django</b> The core web framework used to build this project, providing a high-level <b>Python web framework</b> that encourages
+                rapid development.
+            </p>
+            <p><b>Django REST Framework (DRF)</b>: A powerful and flexible toolkit
+                for building Web APIs, used extensively in this project to create a robust API layer.
+            </p>
+
+            <p>
+                <b>SQLite:</b> The default database used, ensuring easy setup and portability. The database can be replaced with more advanced
+                systems like <b>PostgreSQL</b> or <b>MySQL</b> for production use.
+            </p>
+            <p>
+                <b>Vagrant:</b> Used to manage and replicate development environments, ensuring consistency across different setups.
+            </p>
+            
+            </p>
+        </div>
+    </section>
+
+    
+
+    </section>
+    <section id="contact">
+        <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/CSC-648-SFSU/csc648-02-fa23-team06', '_blank')">
+                Github
+            </button>
+        </div>
+        
+    </section>
+    
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:examplemail@gmail.com">rafael.s.leitao@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a onclick="window.open('https://www.linkedin.com/in/rafaeleitao/', '_blank')">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/pdf.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a onclick="window.open('./assets/RafaelLeitaoResume.pdf')">Resume</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Rafael Leitao. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
