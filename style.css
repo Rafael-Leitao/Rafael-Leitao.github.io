@@ -191,6 +191,14 @@ section {
   border-radius: 2rem;
 }
 
+.project-pic {
+  width: 100%;
+  max-width: 450px;
+  /* Adjust the max width of the image */
+  height: auto;
+  border-radius: 2rem;
+}
+
 
 .section__pic-container img {
   width: 100%;
@@ -304,6 +312,10 @@ section {
 }
 
 .about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Centers the projects */
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;

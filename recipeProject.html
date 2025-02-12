@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Django REST API for User Profiles and Feed</title>
+    <title>Recipe API</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
 </head>
@@ -13,7 +13,7 @@
 <body>
     <nav id="desktop-nav">
 
-        <div class="logo">Django REST API for User Profiles and Feed</div>
+        <div class="logo">Recipe API - A Scalable Backend with Django & Docker</div>
         <div>
             <ul class="nav-links">
                 <li><a href="index.html#about">About me</a></li>
@@ -24,7 +24,7 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Django REST API for User Profiles and Feed</div>
+        <div class="logo">Recipe API - A Scalable Backend with Django & Docker</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -43,27 +43,33 @@
     </section>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/django.admin.jpg" alt="calAlert2 picture" class="project-pic" />
+            <img src="./assets/recipeAdmin.png" alt="calAlert2 picture" class="project-pic" />
         </div>
 
         <div class="section__text">
             <p class="section__text__p1">
-
-                <p style="text-align: justify; margin-bottom: 20px;">
-                    The <b>Django REST API for User Profiles and Feed Management</b> is a backend system designed to handle user
-                    authentication, profile management, and activity feed operations. Built with <b>Django</b> and <b>Django REST Framework (DRF)</b>,
-                    this project provides a scalable and secure foundation for any application requiring user accounts and activity feeds.
-                </p>
-                <p style="text-align: justify; margin-bottom: 20px;">
-                    <b>Comprehensive User Authentication:</b> The system features a secure user authentication mechanism, allowing users to
-                    <b>register, log in, and manage</b> their profiles. The API is designed to ensure that user data is handled safely and
-                    efficiently, adhering to best practices in security.
-                </p>
-                <p style="text-align: justify; margin-bottom: 20px;">
-                    <b>User Profiles and Permissions:</b> This API allows for the <b>creation, retrieval, updating, and deletion (CRUD)</b> of
-                    user profiles. It includes custom permission classes that restrict users from modifying other users' profiles, ensuring data
-                    integrity and privacy.
-                </p>
+            <p style="text-align: justify; margin-bottom: 20px;">
+                The <b>Recipe API</b> is a backend REST API built using <b>Python, Django, and Django REST Framework (DRF)</b>
+                to provide
+                seamless recipe management capabilities. This project allows users to <b>create, update, and delete recipes</b>,
+                as well
+                as associate them with ingredients and tags. Designed with modern development principles, it ensures
+                reliability,
+                scalability, and security.
+            </p>
+            <p style="text-align: justify; margin-bottom: 20px;">
+                <b>Comprehensive Recipe Management:</b> Users can create and manage recipes with <b>titles, cooking times,
+                    ingredients,
+                    and categories</b>. Recipes can be filtered by ingredients and tags, providing an organized and
+                user-friendly way to
+                store and retrieve recipe information.
+            </p>
+            <p style="text-align: justify; margin-bottom: 20px;">
+                <b>Secure User Authentication:</b> The API includes a <b>JWT-based authentication system</b>, ensuring that only
+                registered users can manage their own recipes. User sessions are securely handled, preventing unauthorized
+                access
+                to personal recipe data.
+            </p>
             </p>
         </div>
     </section>
@@ -71,20 +77,21 @@
     <section id="profile">
         <div class="section__text">
             <p class="section__text__p1">
-
             <p style="text-align: justify; margin-bottom: 20px;">
-                <b>Activity Feed Management:</b> Users can post status updates to their profile feed, which can be <b>viewed, updated,
-                and deleted</b>. The API handles these operations with attention to maintaining the integrity of user data and ensuring
-                that updates are securely attributed to the correct user.
+                <b>Image Upload and Storage:</b> The API supports image uploads, allowing users to attach images to their recipes.
+                The uploaded images are stored securely and can be accessed via API endpoints, enhancing the visual experience for
+                users managing their recipes.
             </p>
             <p style="text-align: justify; margin-bottom: 20px;">
-                <b>Token-Based Authentication:</b> The project employs token-based authentication using <b>Django REST Framework's
-                    built-in capabilities</b>. This ensures that only authenticated users can access and modify their profiles and feed items.
+                <b>Health Check API:</b> A dedicated health check endpoint is implemented to monitor system status, ensuring that
+                the
+                API remains functional and reliable in production environments. This feature is essential for maintaining system
+                integrity and performance.
             </p>
             <p style="text-align: justify; margin-bottom: 20px;">
-                <b>Scalable and Modular Architecture:</b> The project is structured to allow for easy scalability and integration
-                with other services. The codebase is clean and modular, making it straightforward to extend the system with additional features or
-                integrate it into larger applications.
+                <b>Scalable and Modular Design:</b> The architecture follows a modular approach, making it easy to extend with
+                additional features. The project is fully containerized with <b>Docker and Docker Compose</b>, ensuring consistency
+                across development and production environments.
             </p>
             </p>
         </div>
@@ -95,28 +102,30 @@
 
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/django.feed.jpg" alt="calAlert2 picture" class="project-pic" />
+            <img src="./assets/recipeAPI2.png" alt="calAlert2 picture" class="project-pic" />
         </div>
 
         <div class="section__text">
             <p class="section__text__p1" style="text-align: justify; margin-bottom: 20px;">
             <p><b>Technology Stack:</b></p>
-            <p >
-                <b>Django</b> The core web framework used to build this project, providing a high-level <b>Python web framework</b> that encourages
-                rapid development.
-            </p>
-            <p><b>Django REST Framework (DRF)</b>: A powerful and flexible toolkit
-                for building Web APIs, used extensively in this project to create a robust API layer.
-            </p>
-
             <p>
-                <b>SQLite:</b> The default database used, ensuring easy setup and portability. The database can be replaced with more advanced
-                systems like <b>PostgreSQL</b> or <b>MySQL</b> for production use.
+                <b>Django & Django REST Framework (DRF)</b>: The core framework used to build a structured and scalable backend
+                API.
             </p>
             <p>
-                <b>Vagrant:</b> Used to manage and replicate development environments, ensuring consistency across different setups.
+                <b>PostgreSQL:</b> A powerful relational database system that provides efficient data storage and retrieval.
             </p>
-
+            <p>
+                <b>Docker & Docker Compose:</b> Used for containerization, ensuring seamless deployment and development
+                workflow.
+            </p>
+            <p>
+                <b>GitHub Actions:</b> Integrated CI/CD pipeline that automates testing and ensures code reliability.
+            </p>
+            <p>
+                <b>Test-Driven Development (TDD):</b> The project follows best practices with <b>40+</b> unit tests covering key API
+                functionalities.
+            </p>
             </p>
         </div>
     </section>

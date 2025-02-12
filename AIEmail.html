@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Django REST API for User Profiles and Feed</title>
+    <title>IntelliReply</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
 </head>
@@ -13,7 +13,7 @@
 <body>
     <nav id="desktop-nav">
 
-        <div class="logo">Django REST API for User Profiles and Feed</div>
+        <div class="logo">IntelliReply</div>
         <div>
             <ul class="nav-links">
                 <li><a href="index.html#about">About me</a></li>
@@ -24,7 +24,7 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Django REST API for User Profiles and Feed</div>
+        <div class="logo">Autonomous Car</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -43,27 +43,24 @@
     </section>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/django.admin.jpg" alt="calAlert2 picture" class="project-pic" />
+            <img src="./assets/emailAI.png" alt="Rafael Leitao profile picture" class="project-pic" />
         </div>
 
         <div class="section__text">
             <p class="section__text__p1">
-
-                <p style="text-align: justify; margin-bottom: 20px;">
-                    The <b>Django REST API for User Profiles and Feed Management</b> is a backend system designed to handle user
-                    authentication, profile management, and activity feed operations. Built with <b>Django</b> and <b>Django REST Framework (DRF)</b>,
-                    this project provides a scalable and secure foundation for any application requiring user accounts and activity feeds.
-                </p>
-                <p style="text-align: justify; margin-bottom: 20px;">
-                    <b>Comprehensive User Authentication:</b> The system features a secure user authentication mechanism, allowing users to
-                    <b>register, log in, and manage</b> their profiles. The API is designed to ensure that user data is handled safely and
-                    efficiently, adhering to best practices in security.
-                </p>
-                <p style="text-align: justify; margin-bottom: 20px;">
-                    <b>User Profiles and Permissions:</b> This API allows for the <b>creation, retrieval, updating, and deletion (CRUD)</b> of
-                    user profiles. It includes custom permission classes that restrict users from modifying other users' profiles, ensuring data
-                    integrity and privacy.
-                </p>
+            <p style="text-align: justify; margin-bottom: 20px;">
+                <b>IntelliReply</b> is an AI-powered email assistant designed to enhance customer email communication by
+                analyzing email context and generating human-like responses. This intelligent system automates the email
+                reply process, increasing efficiency while maintaining professionalism. Employees have full control, as
+                AI-generated replies require human review and approval before being sent.
+            </p>
+            <p style="text-align: justify; margin-bottom: 20px;">
+                The project leverages advanced AI models to craft personalized email responses, reducing the time spent
+                on repetitive queries. By integrating <b>Flask</b> for backend management and <b>SQLAlchemy</b> for
+                database operations, IntelliReply ensures smooth handling of incoming emails and outgoing responses.
+                The system also connects to email servers via <b>IMAP</b> and <b>SMTP</b>, enabling seamless email
+                processing and dispatch.
+            </p>
             </p>
         </div>
     </section>
@@ -71,63 +68,65 @@
     <section id="profile">
         <div class="section__text">
             <p class="section__text__p1">
-
             <p style="text-align: justify; margin-bottom: 20px;">
-                <b>Activity Feed Management:</b> Users can post status updates to their profile feed, which can be <b>viewed, updated,
-                and deleted</b>. The API handles these operations with attention to maintaining the integrity of user data and ensuring
-                that updates are securely attributed to the correct user.
+                <b>Human-in-the-Loop AI:</b> Unlike fully automated email bots, IntelliReply ensures accuracy and
+                compliance by allowing employees to review and edit responses before sending. This approach maintains
+                a balance between automation and human oversight, preventing miscommunication.
             </p>
             <p style="text-align: justify; margin-bottom: 20px;">
-                <b>Token-Based Authentication:</b> The project employs token-based authentication using <b>Django REST Framework's
-                    built-in capabilities</b>. This ensures that only authenticated users can access and modify their profiles and feed items.
+                <b>Scalable and Secure Architecture:</b> The system is built with a scalable architecture, supporting
+                multiple users and concurrent email threads. Sensitive credentials such as <b>OPENAI_API_KEY</b>,
+                <b>SMTP_SERVER</b>, and <b>EMAIL_PASSWORD</b> are securely stored in an environment configuration file,
+                ensuring data protection.
             </p>
             <p style="text-align: justify; margin-bottom: 20px;">
-                <b>Scalable and Modular Architecture:</b> The project is structured to allow for easy scalability and integration
-                with other services. The codebase is clean and modular, making it straightforward to extend the system with additional features or
-                integrate it into larger applications.
+                <b>Automated Deployment & Testing:</b> IntelliReply includes a structured testing framework to validate
+                functionality and prevent regressions. The codebase follows best practices for maintainability, with
+                database migrations handled efficiently through SQLAlchemy.
             </p>
             </p>
         </div>
         <div class="section__pic-container">
-            <img src="./assets/django.profile.jpg" alt="Rafael Leitao profile picture" class="project-pic" />
+            <img src="./assets/emailAI.png" alt="macroProject picture" class="project-pic" />
         </div>
     </section>
-
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/django.feed.jpg" alt="calAlert2 picture" class="project-pic" />
+            <img src="./assets/emailAI.png" alt="calAlert2 picture" class="project-pic" />
         </div>
 
         <div class="section__text">
             <p class="section__text__p1" style="text-align: justify; margin-bottom: 20px;">
             <p><b>Technology Stack:</b></p>
-            <p >
-                <b>Django</b> The core web framework used to build this project, providing a high-level <b>Python web framework</b> that encourages
-                rapid development.
-            </p>
-            <p><b>Django REST Framework (DRF)</b>: A powerful and flexible toolkit
-                for building Web APIs, used extensively in this project to create a robust API layer.
-            </p>
-
             <p>
-                <b>SQLite:</b> The default database used, ensuring easy setup and portability. The database can be replaced with more advanced
-                systems like <b>PostgreSQL</b> or <b>MySQL</b> for production use.
+                <b>Flask:</b> A lightweight web framework used to build the backend API for email processing and management.
             </p>
             <p>
-                <b>Vagrant:</b> Used to manage and replicate development environments, ensuring consistency across different setups.
+                <b>SQLAlchemy:</b> ORM (Object-Relational Mapping) for handling database transactions and storing email data.
             </p>
-
+            <p>
+                <b>OpenAI API:</b> The AI model responsible for generating context-aware, human-like email responses.
+            </p>
+            <p>
+                <b>IMAP & SMTP:</b> Enables the system to retrieve and send emails through secure email servers.
+            </p>
+            <p>
+                <b>Unit Testing & Migrations:</b> A structured testing suite and database migration system ensure stability and
+                easy updates.
+            </p>
+            <p>
+                <b>Environment Configuration:</b> Uses a `.env` file for secure handling of API keys and email credentials.
+            </p>
             </p>
         </div>
     </section>
 
-
-
     </section>
+
     <section id="contact">
         <div class="btn-container">
             <button class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/CSC-648-SFSU/csc648-02-fa23-team06', '_blank')">
+                onclick="window.open('https://github.com/CSC615-2024-Spring/csc615-term-project-anthonySilva23', '_blank')">
                 Github
             </button>
         </div>
@@ -152,7 +151,6 @@
             </div>
         </div>
     </section>
-
     <footer>
         <nav>
             <div class="nav-links-container">
